@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sapoma - Live Music</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <h1>Sapoma - Live Music</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="clubs.html">Clubs</a>
+        <a href="live-music.html">Live Music</a>
+        <a href="restaurants.html">Restaurants</a>
+        <a href="signin.html" class="btn">Sign In</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="live-music">
+      <h2>Live Music Events</h2>
+      <div class="events-container">
+        <div class="event-card">
+          <img src="images/live-music.jpg" alt="Live Music Event 1">
+          <h3>Jazz Night</h3>
+          <p>Date: 1st Feb 2025</p>
+          <p>Location: Bangalore</p>
+          <button onclick="redirectToBooking('Jazz Night', 1200)">Book Now</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Sapoma. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

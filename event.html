@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Details</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Event Details</h1>
+  </header>
+
+  <main>
+    <section id="event-details">
+      <h2 id="event-name">Dance Night at Club One</h2>
+      <img src="images/club1.jpg" alt="Club 1">
+      <p>Date: 25th Jan 2025</p>
+      <p>Location: Mumbai</p>
+      <p>Price: ₹2000</p>
+      <button onclick="bookEvent()">Book Tickets</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Club Vibes. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Handle booking redirection
+    function bookEvent() {
+      window.location.href = "booking.html";
+    }
+  </script>
+</body>
+</html>

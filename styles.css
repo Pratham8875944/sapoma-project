@@ -1,0 +1,386 @@
+/* Global Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #1f1f1f;
+  color: white;
+  line-height: 1.6;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  padding: 10px 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 600;
+}
+
+.navbar a:hover {
+  color: #ffe4e4;
+}
+
+.navbar .btn {
+  background: white;
+  color: #ff416c;
+  padding: 5px 15px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.navbar .btn:hover {
+  background: #ff416c;
+  color: white;
+}
+
+/* Hero Section */
+#hero {
+  background: url('images/club1.jpg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+#hero h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+#hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.cta-btn {
+  padding: 15px 30px;
+  background: #ff416c;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.cta-btn:hover {
+  background: #ff4b2b;
+  transform: scale(1.05);
+}
+
+/* Location Selector Section */
+#location-selector {
+  text-align: center;
+  padding: 50px 20px;
+  background: #222;
+}
+
+#location-selector h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.city-selector select {
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  background: #fff;
+  color: #333;
+  cursor: pointer;
+}
+
+.city-selector select:hover {
+  border-color: #ff416c;
+}
+
+/* Features Section */
+#features {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.feature-cards .card {
+  background: linear-gradient(to bottom, #514a9d, #24c6dc);
+  border-radius: 15px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  color: white;
+}
+
+.feature-cards img {
+  width: 60px;
+  margin-bottom: 15px;
+}
+
+/* Testimonials Section */
+#testimonials {
+  background: #333;
+}
+
+blockquote {
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+cite {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #ff416c;
+}
+
+/* Newsletter Section */
+#newsletter {
+  padding: 50px 20px;
+  background: #222;
+}
+
+#newsletter p {
+  margin-bottom: 20px;
+}
+
+#newsletterForm {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+#newsletterEmail {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  max-width: 300px;
+  width: 100%;
+}
+
+#newsletterEmail:focus {
+  border-color: #ff416c;
+}
+
+#newsletter button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  background: #ff416c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#newsletter button:hover {
+  background: #ff4b2b;
+}
+
+/* Events Container (Clubs, Live Music, Restaurants) */
+.events-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.event-card {
+  background: linear-gradient(to bottom, #ff5f6d, #ffc371);
+  width: 300px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.event-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.event-card button {
+  background: white;
+  color: #ff416c;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.event-card button:hover {
+  background: #ff416c;
+  color: white;
+}
+
+/* Booking Page Styles */
+#booking {
+  max-width: 600px;
+  margin: 50px auto;
+  text-align: center;
+  background: #333;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#booking h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.event-details {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+label {
+  display: block;
+  text-align: left;
+  font-size: 1rem;
+  margin: 10px 0 5px;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+}
+
+input:focus, select:focus {
+  border-color: #ff416c;
+  outline: none;
+}
+
+.total-price {
+  font-size: 1.5rem;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background: #ff416c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #ff4b2b;
+}
+
+/* About Us Page Styles */
+#about-us {
+  max-width: 900px;
+  margin: 50px auto;
+  text-align: center;
+  color: white;
+  background: #1f1f1f;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#about-us .about-banner {
+  background: linear-gradient(to bottom, #ff416c, #ff4b2b);
+  color: white;
+  padding: 40px 20px;
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 30px;
+}
+
+#about-us .about-banner h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+#about-us .about-banner p {
+  font-size: 1.2rem;
+}
+
+#about-us .about-content h3 {
+  font-size: 1.8rem;
+  margin: 20px 0 10px;
+  color: #ff416c;
+}
+
+#about-us .about-content p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  line-height: 1.8;
+  text-align: left;
+}
+
+#about-us .about-content ul {
+  list-style: disc;
+  margin: 15px 0 20px 20px;
+  padding: 0;
+  text-align: left;
+}
+
+#about-us .about-content ul li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #ff4b2b;
+}
+
+/* Footer */
+footer {
+  background: #1f1f1f;
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: #ff416c;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  color: white;
+}

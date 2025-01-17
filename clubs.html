@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sapoma - Clubs</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <h1>Sapoma - Clubs</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="clubs.html">Clubs</a>
+        <a href="live-music.html">Live Music</a>
+        <a href="restaurants.html">Restaurants</a>
+        <a href="signin.html" class="btn">Sign In</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="clubs">
+      <h2>Explore Clubs</h2>
+      <div class="events-container">
+        <div class="event-card">
+          <img src="images/club1.jpg" alt="Club 1">
+          <h3>Dance Night at Club One</h3>
+          <p>Date: 25th Jan 2025</p>
+          <p>Location: Mumbai</p>
+          <button onclick="redirectToBooking('Dance Night at Club One', 1000)">Book Now</button>
+        </div>
+        <div class="event-card">
+          <img src="images/club2.jpg" alt="Club 2">
+          <h3>EDM Party at Club Two</h3>
+          <p>Date: 28th Jan 2025</p>
+          <p>Location: Delhi</p>
+          <button onclick="redirectToBooking('EDM Party at Club Two', 1500)">Book Now</button>
+        </div>
+        <div class="event-card">
+          <img src="images/club1.jpg" alt="Club 3">
+          <h3>Retro Night at Club Three</h3>
+          <p>Date: 30th Jan 2025</p>
+          <p>Location: Bangalore</p>
+          <button onclick="redirectToBooking('Retro Night at Club Three', 1200)">Book Now</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Sapoma. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

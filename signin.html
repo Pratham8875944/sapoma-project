@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sapoma - Sign In / Sign Up</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <h1>Sapoma</h1>
+    </div>
+  </header>
+
+  <main>
+    <section id="auth">
+      <h2>Welcome to Sapoma</h2>
+      <p>Sign In or Sign Up to access exclusive features and personalized experiences.</p>
+
+      <!-- Sign In Form -->
+      <div id="signin">
+        <h3>Sign In</h3>
+        <form id="signinForm">
+          <label for="signinEmail">Email:</label>
+          <input type="email" id="signinEmail" placeholder="Enter your email" required>
+          <label for="signinPassword">Password:</label>
+          <input type="password" id="signinPassword" placeholder="Enter your password" required>
+          <button type="submit">Sign In</button>
+        </form>
+      </div>
+
+      <!-- Sign Up Form -->
+      <div id="signup">
+        <h3>Sign Up</h3>
+        <form id="signupForm">
+          <label for="signupName">Name:</label>
+          <input type="text" id="signupName" placeholder="Enter your name" required>
+          <label for="signupEmail">Email:</label>
+          <input type="email" id="signupEmail" placeholder="Enter your email" required>
+          <label for="signupPassword">Password:</label>
+          <input type="password" id="signupPassword" placeholder="Enter your password" required>
+          <button type="submit">Sign Up</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Sapoma. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

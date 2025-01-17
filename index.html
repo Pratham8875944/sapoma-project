@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sapoma - Discover Unique Experiences</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="navbar">
+      <h1>Sapoma</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="clubs.html">Clubs</a>
+        <a href="live-music.html">Live Music</a>
+        <a href="restaurants.html">Restaurants</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="signin.html" class="btn">Sign In</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-content">
+      <h2>Unforgettable Nights & Culinary Delights</h2>
+      <p>Discover the best events, live music, and fine dining experiences curated for you.</p>
+      <a href="clubs.html" class="cta-btn">Explore Events</a>
+    </div>
+  </section>
+
+  <!-- Location Selector -->
+  <section id="location-selector">
+    <h2>Choose Your City</h2>
+    <div class="city-selector">
+      <select id="cityDropdown" onchange="filterByCity()">
+        <option value="all">Select a City</option>
+        <option value="mumbai">Mumbai</option>
+        <option value="delhi">Delhi</option>
+        <option value="lucknow">Lucknow</option>
+        <option value="bangalore">Bangalore</option>
+        <option value="kolkata">Kolkata</option>
+      </select>
+    </div>
+  </section>
+
+  <!-- Why Choose Sapoma Section -->
+  <section id="features">
+    <h2>Why Choose Sapoma?</h2>
+    <div class="feature-cards">
+      <div class="card">
+        <img src="images/top-clubs-icon.png" alt="Top Clubs Icon">
+        <h3>Top Clubs</h3>
+        <p>Access the best nightlife spots in your city with exclusive experiences tailored for you.</p>
+      </div>
+      <div class="card">
+        <img src="images/live-music-icon.png" alt="Live Music Icon">
+        <h3>Live Music</h3>
+        <p>Enjoy world-class live performances with curated events featuring top artists.</p>
+      </div>
+      <div class="card">
+        <img src="images/fine-dining-icon.png" alt="Fine Dining Icon">
+        <h3>Fine Dining</h3>
+        <p>Indulge in gourmet meals at the most luxurious and highly-rated restaurants.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials">
+    <h2>What Our Customers Say</h2>
+    <div class="testimonials-container">
+      <blockquote>
+        <p>"Sapoma made my birthday celebration unforgettable! Highly recommend their event curation."</p>
+        <cite>- Priya, Mumbai</cite>
+      </blockquote>
+      <blockquote>
+        <p>"The live music events are top-notch. Great atmosphere and amazing performances."</p>
+        <cite>- Rahul, Delhi</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Newsletter Signup -->
+  <section id="newsletter">
+    <h2>Stay Updated</h2>
+    <p>Sign up for our newsletter to get the latest event updates and offers.</p>
+    <form id="newsletterForm">
+      <input type="email" id="newsletterEmail" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Sapoma. All rights reserved.</p>
+      <nav>
+        <a href="terms.html">Terms</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

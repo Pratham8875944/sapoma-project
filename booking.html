@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking - Sapoma</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <h1>Sapoma - Booking</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="clubs.html">Clubs</a>
+        <a href="live-music.html">Live Music</a>
+        <a href="restaurants.html">Restaurants</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="booking">
+      <h2>Booking Details</h2>
+      <div class="event-details">
+        <p id="eventName">Event Name</p>
+        <p id="basePrice">Base Price: ₹0</p>
+      </div>
+
+      <form id="bookingForm">
+        <label for="stagTickets">Stag Tickets (₹1000 each):</label>
+        <input type="number" id="stagTickets" min="0" placeholder="Enter number of stag tickets">
+
+        <label for="coupleTickets">Couple Tickets (₹1500 each):</label>
+        <input type="number" id="coupleTickets" min="0" placeholder="Enter number of couple tickets">
+
+        <label for="tablePeople">Book a Table for (₹500/person):</label>
+        <select id="tablePeople">
+          <option value="0">Select number of people</option>
+          <option value="2">2 People</option>
+          <option value="4">4 People</option>
+          <option value="6">6 People</option>
+          <option value="8">8 People</option>
+          <option value="10">10 People</option>
+        </select>
+      </form>
+
+      <div class="total-price">
+        <p id="totalPrice">Total Price: ₹0</p>
+      </div>
+
+      <button id="confirmBooking">Confirm Booking</button>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Sapoma. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
